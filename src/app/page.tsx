@@ -1,11 +1,15 @@
-import Animais from "@/components/store/animais";
-import ControlsAnimais from "@/components/store/controls-animais";
+// import Animais from "@/components/store/animais";
+import Bear from "@/components/store/bear";
+import BearControl from "@/components/store/bear-control";
+// import ControlsAnimais from "@/components/store/controls-animais";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-">
-      <Animais />
-      <ControlsAnimais />
+      {/* <Animais />
+      <ControlsAnimais /> */}
+      <Bear />
+      <BearControl />
     </div>
   );
 }
