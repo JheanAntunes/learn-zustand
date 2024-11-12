@@ -13,6 +13,11 @@ const store = createStore<BearState>((set) => ({
   increment: () => set((state) => ({ bears: state.bears + 1 })),
 }));
 
+export const setIncrease = () =>
+  store.setState((state) => ({
+    bears: state.bears + 1,
+  }));
+
 const useBearStore = createSelectors(store);
 
 export default useBearStore;
