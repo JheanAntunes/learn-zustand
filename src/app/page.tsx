@@ -1,18 +1,9 @@
-// import Animais from "@/components/store/animais";
-// import Bear from "@/components/store/bear";
-// import BearControl from "@/components/store/bear-control";
-// import ControlsAnimais from "@/components/store/controls-animais";
-
-import Bound from "@/components/store/bound";
+import { ConsumerBeaContext } from "@/components/store/consumer-bear-context";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-">
-      {/* <Animais />
-      <ControlsAnimais /> */}
-      {/* <Bear />
-      <BearControl /> */}
-      <Bound />
+      <ConsumerBeaContext />
     </div>
   );
 }
